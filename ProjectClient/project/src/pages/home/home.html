@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Skill Mapper
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div [style.width]="'100%'">
+  <div id="container" class="center block">
+  <label padding-left margin-top class="block darkGrey mediumText left">select a skill</label>
+    <ion-item no-lines no-padding no-margin class="center">
+      <select id="skillSelect" margin-top class="inputField mediumText darkGrey bold" name="itemAddress" [(ngModel)]="skillId">
+        <option class="mediumText" *ngFor="let skill of skills" 
+        [value]="skill.id">{{skill.name}}</option>
+      </select>
+    </ion-item>
+
+    <button (tap)="findRelevantSkills(queryTypes.DATABASE)" margin-top ion-button block color="primary" class="block center mediumText">Find Relevant Skills (Database)</button>
+    <button (tap)="findRelevantSkills(queryTypes.LIVE_CRAWL)" margin-top ion-button block color="primary" class="block center mediumText">Find Relevant Skills (Live Crawl)</button>
+  </div>
+</div>
+</ion-content>

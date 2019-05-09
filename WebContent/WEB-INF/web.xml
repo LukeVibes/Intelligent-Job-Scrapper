@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+   id="WebApp_ID" version="3.0">
+   <!-- Sahaj Arora 100961220 Luke Daschko 100976007 Jennifer Franklin 100315764 -->
+   <display-name>COMP4601-Project</display-name>
+   <servlet>
+      <servlet-name>COMP4601-Project</servlet-name>
+      <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+      <init-param>
+         <param-name>com.sun.jersey.config.property.packages</param-name>
+         <param-value>edu.carleton.comp4601.resources</param-value>
+      </init-param>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>COMP4601-Project</servlet-name>
+      <url-pattern>/rest/project/*</url-pattern>
+   </servlet-mapping>
+   <error-page>
+      <error-code>500</error-code>
+      <location>/general_error.html</location>
+   </error-page>
+   	<filter>
+		<filter-name>CorsFilter</filter-name>
+		<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CorsFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>
