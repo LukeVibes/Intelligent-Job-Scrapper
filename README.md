@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="scraper.jpg" alt="Logo" width="80" height="80">
+    <img src="scraper.jpg" alt="Logo">
   </a>
 
   <h3 align="center">Intelligent Job Scrapper</h3>
