@@ -133,7 +133,7 @@ Great, so now that you have all the good stuff running head to we front-end clie
 
 Luke Daschko - [@lukeduker](https://www.instagram.com/lukeduker/) - daschko.l@gmail.com
 
-Project Link: [https://github.com/LukeVibes/PopularMusicAI](https://github.com/LukeVibes/PopularMusicAI)
+Project Link: [hhttps://github.com/LukeVibes/Intelligent-Job-Scrapper](https://github.com/LukeVibes/Intelligent-Job-Scrapper)
 
 
 
